@@ -10,7 +10,7 @@ from string import ascii_uppercase, ascii_lowercase
 
 class MaggyPiconEmu(Renderer, Poll):
 	__module__ = __name__
-	searchPaths = ('/usr/share/enigma2/%s/', '/media/hdd/%s/', '/media/usb/%s/', '/media/sda1/%s/')
+	searchPaths = ('/usr/share/enigma2/%s', '/media/hdd/%s', '/media/usb/%s', '/media/sda1/%s')
 
 	def __init__(self):
 		Poll.__init__(self)
