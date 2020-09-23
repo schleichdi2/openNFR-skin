@@ -1,4 +1,3 @@
-from Tools.Directories import fileExists
 from Tools.LoadPixmap import LoadPixmap
 from Components.Pixmap import Pixmap
 from Components.Renderer.Renderer import Renderer
@@ -6,7 +5,7 @@ from enigma import ePixmap, eTimer
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_ACTIVE_SKIN, resolveFilename
 from Components.config import config
 from Components.Converter.Poll import Poll
-from string import ascii_uppercase, ascii_lowercase
+from os import path
 
 class MaggyPiconEmu(Renderer, Poll):
 	__module__ = __name__
@@ -15,7 +14,7 @@ class MaggyPiconEmu(Renderer, Poll):
 	def __init__(self):
 		Poll.__init__(self)
 		Renderer.__init__(self)
-		self.path = 'emu'
+		self.path = 'piconCam'
 		self.nameCache = {}
 		self.pngname = ''
 
