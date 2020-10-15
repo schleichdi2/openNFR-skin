@@ -7,7 +7,7 @@ from string import ascii_uppercase
 from Components.ServiceEventTracker import ServiceEventTracker
 from Tools.Directories import fileExists, resolveFilename
 from os import environ, listdir, remove, rename, system
-from ServiceEventTracker import ServiceEventTracker
+from Components.ServiceEventTracker import ServiceEventTracker
 import gettext
 from Components.Poll import Poll
 
